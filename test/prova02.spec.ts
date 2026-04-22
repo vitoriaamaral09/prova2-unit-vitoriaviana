@@ -6,8 +6,6 @@ const api = axios.create({
 
 describe("Testes API JSONPlaceholder", () => {
 
-  // ✅ TESTES POSITIVOS
-
   test("GET posts", async () => {
     const res = await api.get("/posts");
     expect(res.status).toBe(200);
@@ -42,7 +40,7 @@ describe("Testes API JSONPlaceholder", () => {
     expect(res.status).toBe(200);
   });
 
-  // ❌ TESTES NEGATIVOS
+
 
   test("GET post inexistente", async () => {
     try {
